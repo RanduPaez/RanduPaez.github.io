@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de temperatura</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="TABLE">
+        <h1>Convertidor de temperatura</h1>
+        <div class="input">
+            <select class = "Entrada" name="in" id="in">
+                <option value="1">Celsius</option>
+                <option value="2">Farenheit</option>
+                <option value="3">Kelvin</option>
+                <option value="4">Rankine</option>
+            </select>
+            <input type="dato" name="input" id="input" placeholder="Ingrese valor">
+        </div>
+        <div class ="output">
+            <select class = "Salida" name="out" id="out">
+                <option value="1">Celsius</option>
+                <option value="2">Farenheit</option>
+                <option value="3">Kelvin</option>
+                <option value="4">Rankine</option>
+            </select>
+            <input type="dato" name="output" id="output" placeholder="Conversión">
+        </div>
+
+        <button class="boton" onclick="convertir()">Convertir</button>
+    </div>
+</body>
+</html>

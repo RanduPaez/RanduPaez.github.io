@@ -1,0 +1,190 @@
+:root{
+    --color1:rgb(167, 146, 119);
+    --color2:rgb(209, 187, 158);
+    --color3:rgb(234, 216, 192);
+    --color4:rgb(255, 242, 225);
+    --Cafe: rgb(167, 146, 119);
+    --Grey: rgb(180, 180, 184);
+    --Greylight: rgb(199, 200, 204);
+    --Beige: rgb(227, 225, 217);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografia */
+.info p{
+    color: black;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: black; 
+}
+h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: black; 
+}
+h3 {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: black; 
+}
+h1,h2,h3 {
+    text-align: center;
+    color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--Grey); /* Negro */
+    color: black; /* Gris claro */
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+  }
+  
+a:hover h1, a:hover h1 span {
+    background-color: var(--color4);
+    color: var(--Cafe);
+  }
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: var(--color4); /* Gris oscuro */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra negra */
+    margin: 20px;
+    border-top: 8px solid #444444; /* Gris intermedio */
+}
+
+/* Encabezado */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid var(--Cafe); /* Gris medio */
+}
+
+.header p {
+    font-size: 1rem;
+    color: var(--Cafe); 
+}
+
+/* Secciones */
+.info, .experience, .education, .skills {
+    margin-top: 30px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #555555; /* Gris medio */
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    color: var(--Cafe); /* Blanco */
+}
+
+/* Listas y elementos de experiencia */
+ul {
+    list-style-type: none;
+    padding-left: 1em;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: black;
+}
+
+.experience-item, .education-item {
+    margin-bottom: 20px;
+}
+
+.experience-item h3, .education-item h3 {
+    font-size: 1.2rem;
+    color: var(--Cafe); 
+}
+
+.experience-item p, .education-item p {
+    font-size: 0.9rem;
+    color: #aaaaaa; /* Gris claro */
+}
+
+/* Habilidades */
+.skills span {
+    display: inline-block;
+    background: var(--Cafe); /* Gris medio */
+    color: white; 
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.skills span:hover {
+    background: white; 
+    color: var(--Cafe); 
+}
+
+/* Botones */
+button {
+    background-color:var(--Cafe); 
+    color: var(--Cafe); 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--Cafe); 
+    color: var(--Cafe);
+}
+
+/* Ajustes de bordes y espaciado */
+th, td {
+    border: 1px solid var(--Cafe); 
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white; 
+    color: var(--Cafe); 
+}
+
+thead {
+    background-color: white 
+}
+
+tbody tr:nth-child(even) {
+    background-color: white 
+}
+
+tbody tr:hover {
+    background-color: white 
+}

@@ -1,0 +1,153 @@
+:root {
+    --negro: #191919;
+    --Cafe: rgb(167, 146, 119);
+    --Grey: rgb(180, 180, 184);
+    --Greylight: rgb(199, 200, 204);
+    --Beige: rgb(227, 225, 217);
+    --color1:rgb(167, 146, 119);
+    --color2:rgb(209, 187, 158);
+    --color3:rgb(234, 216, 192);
+    --color4:rgb(255, 242, 225);
+}
+
+body{
+    background-color: var(--Greylight);
+}
+
+h1 {
+    font-size: 2rem !important;
+    color: var(--negro) !important;
+    text-align: center !important;
+  }
+
+  span {
+    color: var(--Cafe) !important;
+    font-size: 1.5rem !important;
+    text-align: center !important;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+  
+  a:hover h1, a:hover h1 span {
+    color: var(--Cafe) !important;
+  }
+  
+h2 {
+      font-size: 2rem !important;
+      text-align: center;
+      color: var(--Cafe);
+      margin: 0;
+      text-align: center;
+    }
+
+h3 {    
+        text-align: center;
+        color: var(--Cafe);
+        margin: 0;
+        font-size: 2rem;  
+ }
+
+.header{
+    background-color: var(--color4);
+    width: 89rem;
+    margin: 1.5rem auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: baseline;
+    padding-top: 1.5rem;
+}
+
+img {
+    width: 100%;
+}
+.imagen{
+    width: 15%;
+}
+
+.header-1{
+    margin-left: 0.5rem;
+    font-size: 2.75rem;
+    color: var(--Cafe);
+}
+
+fieldset {
+    width: 70rem;
+    margin: 0 auto;
+    border: none;    
+}
+
+.campos {
+    width: 70rem;
+    margin: 0 auto;
+    background-color: var(--color4);
+    padding: 1.5rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+
+legend {
+    text-transform: uppercase;
+    background-color: var(--Cafe);
+    font-size: 1.25rem;
+    padding: 0.5rem 2.75rem;
+    
+}
+
+.pad-legend {
+    color: var(--negro);    
+    text-transform: uppercase;
+    background-color: var(--Cafe);
+    font-size: 1.25rem;
+    padding: 0.5rem 2.75rem;
+    
+}
+
+.input-text {
+    width: 100%;
+    font-size: 1.5rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: solid var(--color2) 1.75px;
+}
+
+.etiqueta {
+    font-size: 1.25rem;
+}
+
+.main {
+    width: 90rem;
+    margin: 0 auto;
+    background-color: var(--Cafe);
+    padding: 3rem 0 4rem 0;
+}
+
+.boton-margin{
+    width: 75rem;
+    margin: 1.5rem auto 0 auto;
+    text-align: right;
+}
+
+.boton {
+    background-color: var(--color4);
+    font-size: 1.25rem;
+    padding: 0.25rem .85rem;
+    border: none;
+    text-transform: uppercase;
+    color: var(--negro);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: white;
+    color: var(--Cafe);
+}
+
+.mi-table tbody tr:hover {
+    background-color: white !important;
+    color: var(--Cafe) !important;
+}

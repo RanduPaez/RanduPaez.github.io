@@ -1,0 +1,36 @@
+:root{
+    --primario: #a79277;
+    --tittle: #b4a187;
+    --background-color: #fff2e1;
+    --oscuro: #151515;
+}
+
+h1{
+    text-align: center;
+    border-radius: 10px;
+    border-bottom: black solid;
+    background-color: var(--tittle);
+}
+
+body{
+    background-color: var(--primario);
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    padding: 5px;
+    display: flex;
+}
+
+.TABLE{
+    background-color: var(--background-color);
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.TABLE input{
+    margin-bottom: 15px;
+}
+
+.TABLE output{
+    margin-bottom: 20px;
+}

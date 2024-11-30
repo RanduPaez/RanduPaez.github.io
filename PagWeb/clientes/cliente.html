@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <title>Base de datos clientes</title>
+    <script>
+        function borrarValor(campo) {
+            if (campo.value === campo.defaultValue) {
+                campo.value = "";
+            }
+        }
+    </script>
+</head>
+<body>
+    <a href="../index.html"><h1 class="titulo">Páez Medrano Kevin Randú     <span style="color: rgb(167, 146, 119)">         Computer Engineer</span></h1></a>
+    <div class="main">
+        <header class="header">
+            <h1 class="header-1">Base de datos Clientes</h1>
+            <div class="imagen">
+                <img src="./db.png" alt="db">
+            </div>        
+        </header>
+         
+        <form id="formulario" action="./registrar.php" method="POST" onsubmit="borrarCampos()">
+            <fieldset>
+                <div class="pad-legend">
+                    <legend>Base de datos de clientes:</legend>
+                </div>
+                
+                <div class="campos">
+                    <div>
+                        <label class="etiqueta" for="">Empresa:</label>   
+                        <input required class="input-text" placeholder="Empresa" type="text" name="Empresa" id="Empresa" value="" onfocus="borrarValor(this)">
+                    </div>
+                    <div>
+                        <label class="etiqueta" for="">Contacto</label>   
+                        <input required class="input-text" placeholder="Contacto" type="text" name="Contacto" id="Contacto" value="" onfocus="borrarValor(this)">
+                    </div>
+                    <div>
+                        <label class="etiqueta" for="">País</label>   
+                        <input required class="input-text" placeholder="País" type="text" name="Pais" id="Pais" value="" onfocus="borrarValor(this)">
+                    </div>
+                </div>
+            </fieldset>
+            <div class="boton-margin">
+                <a style="text-decoration: none; margin-right: 2.5px;" class="boton" href="./tblClientes.php">Ir a tabla de clientes</a>
+                <input class="boton" type="submit" value="Enviar">
+                
+            </div>
+            
+        </form>
+    </div>
+
+</body>
+</html>

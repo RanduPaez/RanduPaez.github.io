@@ -1,0 +1,169 @@
+:root{
+    --color1:rgb(167, 146, 119);
+    --color2:rgb(209, 187, 158);
+    --color3:rgb(234, 216, 192);
+    --color4:rgb(255, 242, 225);
+    --Cafe: rgb(167, 146, 119);
+    --Grey: rgb(180, 180, 184);
+    --Greylight: rgb(199, 200, 204);
+    --Beige: rgb(227, 225, 217);
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 242, 225);
+    margin: 20px;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+.example {
+    margin-bottom: 40px;
+}
+
+.box {
+    background-color: var(--color2);
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    border: 1px solid rgb(227, 225, 217);
+}
+
+a {
+    text-decoration: none;
+  }
+  
+a:hover h1, a:hover h1 span {
+    background-color: var(--color4);
+    color: var(--Cafe);
+  }
+/* Ejemplos de Flexbox */
+
+/* 1. Centrar un elemento horizontal y verticalmente */
+.flex-example1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: var(--color3);
+}
+
+.flex-example1 .box {
+    width: 100px;
+    height: 100px;
+}
+
+/* 2. Distribuir elementos equitativamente en una fila */
+.flex-example2 {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color4);
+}
+
+.flex-example2 .box {
+    width: 50px;
+    height: 50px;
+}
+
+/* 3. Elemento flexible que ocupa el espacio restante */
+.flex-example3 {
+    display: flex;
+}
+
+.flex-example3 .box {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color1);
+}
+
+.flex-example3 .grow {
+    flex-grow: 1;
+}
+
+/* 4. Fila invertida */
+.flex-example4 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flex-example4 .box {
+    width: 50px;
+    height: 50px;
+}
+
+/* 5. Alinear elementos al final de la fila */
+.flex-example5 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-example5 .box {
+    width: 50px;
+    height: 50px;
+}
+
+/* Ejemplos de Grid */
+
+/* 6. Grid básico con 3 columnas */
+.grid-example1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: rgb(227, 225, 217);
+}
+
+.grid-example1 .box {
+    height: 50px;
+}
+
+/* 7. Grid con columnas de diferentes tamaños */
+.grid-example2 {
+    display: grid;
+    grid-template-columns: 100px 200px 1fr;
+    gap: 10px;
+    background-color: rgb(227, 225, 217);
+}
+
+.grid-example2 .box {
+    height: 50px;
+}
+
+/* 8. Grid con 2 filas y 2 columnas */
+.grid-example3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid-example3 .box {
+    height: 50px;
+}
+
+/* 9. Elemento que ocupa dos columnas */
+.grid-example4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-example4 .box:nth-child(2) {
+    grid-column: span 2;
+    background-color: var(--color2);
+}
+
+/* 10. Elemento que ocupa dos filas */
+.grid-example5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid-example5 .box:nth-child(3) {
+    grid-row: span 2;
+    background-color: var(--color2);
+}
